@@ -16,36 +16,132 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+    <header>
+      <nav class="main">
+        <a class="logo" href="">craftdata</a>
+        <ul class="main">
+          <li><a href="#our-tradecraft" class="what-we-do">What we do</a></li>
+          <li><a href="#about-us" class="who-we-are">Who we are</a></li>
+          <li><a href="#contact-us" class="contact-us">Contact Us</a></li>
+        </ul>
+        <a href="#" id="pull"></a>
+      </nav>
+    </header>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+    <section class="main">
+      <div class="container centered">
+        <!--h2 class="main">A complete solution to your data needs</h2-->
+      </div>
+    </section>
+
+    <section class="section-break">
+      <div class="contact-us-banner">
+        <span>Let us show you how we can help launch your product</span>
+        <a href="contact-us" class="button noselect contact-us">Contact Us</a>
+      </div>
+    </section>
+
+    <section class="our-tradecraft">
+      <div class="container centered">
+        <h1 class="">What we do</h1>
+      </div>
+
+      <div class="narrow-container">
+        <div class="service">
+          <span class="text">
+            <p class="bold">Web Applications</p>
+            <p>We develop complete web applications with data processing at its core. This includes building data pipelines, architecting RDBMS / NoSQL backends, creating RESTful APIs and rich single-page front-ends.</p>
+          </span>
+          <span class="image web"></span>
+        </div>
+
+        <div class="service">
+          <span class="image analytics"></span>
+          <span class="text">
+            <p class="bold">Custom Dashboards</p>
+            <p>We build customized web dashboards so that you know exactly whats happening in your business. Integrate all your disparate business data in one beautifully crafted view that fits equally well in a large TV screen or your mobile device.</p>
+          </span>
+        </div>
+
+        <div class="service">
+          <span class="text">
+            <p class="bold">Interactive Visualizations</p>
+            <p>Sometimes you need to go beyond the standard charts in business dashboards to tell compelling visual stories. We also create one-off stand-alone information visualizations for such cases.</p>
+          </span>
+          <span class="image dashboard"></span>
+        </div>
+
+        <!--div class="service">
+          <span class="right text">
+            <p>Cloud Deployment</p>
+            <p>We deploy our solutions to a secure and scalable cloud infrastructure, so that you do not have to worry about scaling your application as you grow.</p>
+          </span>
+          <span class="left image cloud"></span>
+        </div>
+      </div-->
+    </section>
+
+    <section class="our-team">
+      <div class="container centered">
+        <h1 class="">Who we are</h1>
+        <p class="justify">We are a group of expert software developers and data engineers with a penchant for building data-intensive web applications. Whether you are an early stage startup in need of extra developers, an existing business that wants to make informed decisions from its data or a non-profit looking to communicate its impact through compelling visualizations, we are here to help you.</p>
+        <div class="people-involved">
+          <div class="advised-by">
+            <img src="assets/saurav_profile_picture.jpg" class="profile">
+            <p class="profile justify">
+              <span class="bold">Saurav Dhungana</span> is a data scientist who worked in Europe, helping tech giants like Google understand web user behaviour, before returning to his native Nepal. These days, he juggles between extracting insights from business data for executives and marketing teams, and creating interactive data visualization using open data for online publications.
+            </p>
+            <div class="links">
+              <a href="https://www.linkedin.com/in/sauravdhungana" target="_blank"><img src="assets/linkedin-24.png" border="0" alt="Linkedin Profile"></a> 
+            </div>
           </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
+          <div class="advised-by">
+            <img src="assets/vinaya_profile_picture.jpg" class="profile">
+            <p class="profile justify">
+            <span class="bold">Vinaya L Shrestha</span> is a software developer who brings ideas to life. A true full-stack developer, Vinaya dwells on both back-end and front-end code. He currently plies his trade at Oracle America, Inc., working on a state-of-the-art social media management software that hundreds of businesses across the world use to manage their social media presence.
+            </p>
+            <div class="links">
+              <!--a href=""><img src="assets/twitter-24.png" border="0" alt="Twitter Profile"></a> 
+              <a href=""><img src="assets/github-24.png" border="0" alt="Twitter Profile"></a--> 
+              <a href="https://www.linkedin.com/in/vinayashrestha" target="_blank"><img src="assets/linkedin-24.png" border="0" alt="Linkedin Profile"></a> 
+            </div>
+          </div>
+          
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
+    <section class="contact-us">
       <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
+        <h1 class="">Contact Us</h1>
+        <div class="form-container">
+          <form class="contact-form">
+            <div class="field">
+              <label>Name</label>
+              <input name="name" type="text" placeholder="Your Name"/>
+            </div>
+            <div class="field">
+              <label>Email</label>
+              <input name="email" type="text" placeholder="Your Email"/>
+            </div>
+            <div class="field">
+              <label>Message</label>
+              <textarea name="message" rows="10" placeholder="Your Message"></textarea>
+            </div>
+            <div class="actions right">
+              <button class="button black">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="map-container">
+          <span class="locations"></span>
+          <p>You can also email us at: hello@craftdata.co</p>
+          <p>We have support teams in several time zones. We will respond within 12 hours. Thats a promise.</p>
+        </div>
       </div>
-    </div>
+    </section>
 
-    {% include analytics.html %}
+    <footer>
+    </footer>
   </body>
 </html>
